@@ -11,11 +11,13 @@ import EventBind from './components/EventBind';
 import ParentComp from './components/childtoparent/ParentComp';
 import ConditionalRendring from './components/ConditionalRendring';
 import PersonsList from './components/List/PersonsList';
+import Stylesheet from './components/Stylesheet';
+import Inline from './components/Inline';
+import CssModule from './components/CssModule';
 
 function App() {
   return (
     <div className="App">
-      
 {/*       
        <Employee firstName="Abderrahim" secondName="El khaldi" age="20" >
         <FunctionnalCompo />
@@ -35,10 +37,14 @@ function App() {
       <ClassClick />
       <EventBind />
       <ParentComp />
-     
-      <ConditionalRendring /> */}
-
+      <ConditionalRendring /> 
       <PersonsList />
+      <Stylesheet style="danger" />
+      <Stylesheet style="primary" />
+      
+      <Inline />
+      */}
+      <CssModule />
     </div>
   );
 }
