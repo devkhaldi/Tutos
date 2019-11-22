@@ -16,6 +16,7 @@ import Inline from './components/Inline';
 import CssModule from './components/CssModule';
 import Form from './components/Form';
 import Fragment from './components/Fragment';
+import Refs from './components/Refs';
 
 function App() {
   return (
@@ -47,8 +48,9 @@ function App() {
       <Inline />
       <CssModule />
       <Form />
-      */}
       <Fragment />
+      */}
+      <Refs />
     </div>
   );
 }
