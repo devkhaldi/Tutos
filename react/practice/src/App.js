@@ -1,16 +1,16 @@
 import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
+import "./App.css";
+import Refs from "./components/content/Refs/Refs";
 
 function App() {
   return (
-    <div className="container-fluid">
-      <div className="col-2">
-
-      </div>
-      <div className="col-10">
-        
-      </div>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/refs" component={Refs} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
