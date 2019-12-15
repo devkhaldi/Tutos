@@ -18,6 +18,7 @@ import Form from "./components/Form";
 import Fragment from "./components/Fragment";
 import Refs from "./components/Refs";
 import ParentCompo from "./components/PureCompo/ParentCompo";
+import Parent from "./components/RefsClasse/Parent";
 
 function App() {
   return (
@@ -50,8 +51,9 @@ function App() {
       <CssModule />
       <Form />
       <Fragment />
-      <Refs /> */}
-      <ParentCompo />
+      <Refs /> 
+      <ParentCompo /> */}
+      <Parent />
     </div>
   );
 }
