@@ -17,11 +17,12 @@ import CssModule from "./components/CssModule";
 import Form from "./components/Form";
 import Fragment from "./components/Fragment";
 import Refs from "./components/Refs";
+import ParentCompo from "./components/PureCompo/ParentCompo";
 
 function App() {
   return (
     <div className="container">
-      <Employee firstName="Abderrahim" secondName="El khaldi" age="20">
+      {/* <Employee firstName="Abderrahim" secondName="El khaldi" age="20">
         <FunctionnalCompo />
       </Employee>{" "}
       <hr />
@@ -49,7 +50,8 @@ function App() {
       <CssModule />
       <Form />
       <Fragment />
-      <Refs />
+      <Refs /> */}
+      <ParentCompo />
     </div>
   );
 }
