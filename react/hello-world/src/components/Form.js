@@ -45,29 +45,15 @@ export class Form extends Component {
       <form onSubmit={this.handelForm} className="col-md-4 offset-4 mt-5">
         <div className="form-group">
           <label htmlFor="userName">User Name</label>
-          <input
-            type="text"
-            onChange={this.handelUserName}
-            value={userName}
-            className="form-control"
-          />
+          <input type="text" onChange={this.handelUserName} value={userName} className="form-control" />
         </div>
         <div className="form-group">
           <label htmlFor="message">Message</label>
-          <textarea
-            id=""
-            onChange={this.handelMessage}
-            value={message}
-            className="form-control"
-          ></textarea>
+          <textarea id="" onChange={this.handelMessage} value={message} className="form-control"></textarea>
         </div>
         <div className="form-group">
           <label htmlFor="topic">Topic</label>
-          <select
-            value={topic}
-            className="form-control"
-            onChange={this.handelTopic}
-          >
+          <select value={topic} className="form-control" onChange={this.handelTopic}>
             <option value="react">React</option>
             <option value="angular">Angular</option>
             <option value="vue">Vue JS</option>
