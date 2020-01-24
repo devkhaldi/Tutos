@@ -1,7 +1,8 @@
 import React, { useReducer, useEffect } from "react";
 import Axios from "axios";
+import Posts from "./Posts";
 
-import Axios from "axios";
+export const PostsContext = React.createContext();
 
 const initialState = {
   loading: true,
@@ -41,19 +42,9 @@ function Container() {
       });
   }, []);
   return (
-    <div>
-      {state.loading ? (
-        <h3>Loading ...</h3>
-      ) : (
-        <ul className="list-group">
-          {state.posts.map(post => (
-            <li className="list-group-item" key={post.id}>
-              {post.title}
-            </li>
-          ))}
-        </ul>
-      )}
-    </div>
+    <PostsContext.Provider value={state.posts}>
+      <div>{state.loading ? <h3>Loading ...</h3> : <Posts />}</div>;
+    </PostsContext.Provider>
   );
 }
 
