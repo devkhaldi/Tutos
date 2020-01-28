@@ -19,7 +19,7 @@ export class Signup extends Component {
   render() {
     return (
       <div className='container'>
-        <form onSubmit={this.handelSubmit} className='white'>
+        <form onSubmit={this.handelSubmit} className='white' autoComplete='off'>
           <h5 className='grey-text text-darken-3'>Sign In</h5>
           <div className='input-field'>
             <label htmlFor='email'>Email</label>
@@ -28,7 +28,6 @@ export class Signup extends Component {
               id='email'
               onChange={this.handelChange}
               value={this.state.email}
-              autoComplete='none'
             />
           </div>
           <div className='input-field'>
@@ -47,7 +46,6 @@ export class Signup extends Component {
               id='firstName'
               onChange={this.handelChange}
               value={this.state.firstName}
-              autoComplete='none'
             />
           </div>
           <div className='input-field'>
@@ -57,12 +55,11 @@ export class Signup extends Component {
               id='lastName'
               onChange={this.handelChange}
               value={this.state.lastName}
-              autoComplete='none'
             />
           </div>
           <div className='input-field'>
             <button type='submit' className='btn pink lighten-1'>
-              LOGIN
+              SIGN UP
             </button>
           </div>
         </form>
